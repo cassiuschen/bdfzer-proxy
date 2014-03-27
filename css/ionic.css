@@ -1989,7 +1989,7 @@ body, .ionic-body {
   right: 0;
   bottom: 0;
   left: 0;
-  overflow: hidden;
+  overflow: auto;
   margin: 0;
   padding: 0;
   color: #000;
@@ -3138,7 +3138,7 @@ a.subdued {
     right: 20%;
     bottom: 20%;
     left: 20%;
-    overflow: visible;
+    overflow: auto;
     min-height: 240px;
     width: 60%; }
   .modal.ng-leave-active {

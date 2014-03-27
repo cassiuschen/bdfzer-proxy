@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="starter">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1,user-scalable=no">
+    <title>Proxy</title>
 
     <link href="css/ionic.css" rel="stylesheet">
     <link href="">
@@ -14,37 +14,33 @@
     -->
 
     <!-- ionic/angularjs js -->
-    <script type="text/javascript" src="js/ionic.js"></script>
-    <script type="text/javascript" src="js/ionic-angular.js"></script>
-
+    <script src="js/ionic.bundle.js"></script>
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
   </head>
-  <body ng-app="starter" animation="slide-left-right-ios7" style="padding-top: 44px;">
-    <!-- 
+  <body>
+    <!--
       The nav bar that will be updated as we navigate between views.
-    -->
-    <div class="bar bar-header bar-positive">
+      -->
+    <ion-header-bar class="bar bar-header bar-positive">
       <h1 class="title">北附人 - Proxy</h1>
-    </div>
-
-    <div class="card">
+    </ion-header-bar>
+   <ion-content overflow-scroll="true" has-footer="true" has-header="true" padded="true">
+    <div class=" card">
       <div class="item item-text-wrap">
         <p>北附人Proxy是利用<code>Google App Engine</code>作为前端的、自动化科学上网服务，目前仍在建设中。</p>
         <p>我们通过负载平衡服务针对运行在<code>Google App Engine</code>上的<code>Goagent</code>集群进行管理和使用，整合了资源，加快了自动流量速度。</p>
         <p>自动化代理脚本拥有自动学习功能，通过对用户网络日志的分析，总结出白名单，并自动生成脚本。</p>
       </div>
     </div>
-
-    <div class="list card">   
-
+    <div class="list card">
       <div class="item item-avatar">
         <img src="img/ionic.png">
         <h2>如何使用？</h2>
         <p>测试版，不稳定，慎用！</p>
-      </div>    
+      </div>
 
       <div class="item item-body">
         <p>
@@ -58,7 +54,7 @@
         <p>
           <code>http://saas.bdfzer.com/proxy/proxy.pac</code>
         </p>
-      </div>    
+      </div>
 
       <!--div class="item tabs tabs-secondary tabs-icon-left">
         <a class="tab-item" href="#">
@@ -73,14 +69,22 @@
           <i class="icon ion-share"></i>
           Share
         </a>
-      </div-->    
+      </div-->
 
     </div>
-    <!-- 
-      The views will be rendered in the <ion-nav-view> directive below
-      Templates are in the /templates folder (but you could also
-      have templates inline in this html file if you'd like).
-    -->
-    <ion-nav-view></ion-nav-view>
+
+    <div class="item item-list">
+      <div class="item item-icon-left assertive">
+        <i class="icon ion-information-circled"></i>
+        Warning!
+      </div>
+      <div class="item item-body">
+        <p>北附人Proxy科学上网服务是非盈利的、实验性的服务，面向公共开放。如果您使用北附人Proxy服务则代表您接受以下条款：</p> <p>• 允许北附人服务记录并分析您通过北附人Proxy的网络访问请求。</p><p>• 允许北附人无理由地阻止被判定为非正当的网络请求。</p><p>• 允许北附人无提前告知地停止服务。</p><p>• 允许北附人在您通过北附人Proxy发送的网络请求中收集数据（可能包含隐私数据）。</p><p>• 允许北附人在无告知的情况下变更条款内容。</p> <p>北附人Proxy是非人工值守的科学上网服务，故北附人Proxy有以下免责声明：</p> <p>• 北附人Proxy对用户通过Proxy造成的信息泄漏概不负责。</p><p>• 北附人Proxy对用户在使用过程中任何行为无直接控制能力，故对其后果概不负责。</p><p>• 北附人Proxy对用户可能受到的网络攻击概不负责。</p>
+      </div>
+    </div>
+    </ion-content>
+  <ion-footer-bar class="bar-static">
+    <h1 class="title">北附人 | BDFZer</h1>
+    </ion-footer-bar>
   </body>
 </html>
