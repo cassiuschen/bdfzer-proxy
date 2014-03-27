@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('proxy.controllers', [])
 
 .controller('DashCtrl', function($scope) {
 })
